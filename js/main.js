@@ -1,3 +1,8 @@
+//audio
+var audio = $("#myAudio")[0];
+audio.autoplay = true;
+audio.load();
+
 $(window).on("load", function(){
 
     // //preloader
@@ -20,10 +25,10 @@ $(window).on("load", function(){
     slideShow();
 
     //audio
-     var audio = $("#myAudio")[0];
      audio.oncanplay = function(){
          audio.play();
      }
+    
      $(".fa-music").click(function(){
         if($(this).hasClass("pause")){
             audio.play();
