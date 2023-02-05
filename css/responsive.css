@@ -1,0 +1,134 @@
+@media(min-width: 768px){
+    nav{
+        display: block!important;
+    }
+}
+
+@media(max-width: 991px){
+    .gallery-section .gallery-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .rsvp-section .result-container{
+        flex: 0 0 45%;
+        display: block;
+    }
+
+    .rsvp-section .rsvp-form{
+        flex: 0 0 45%;
+    }
+}
+
+@media(max-width: 767px){
+    header .logo{
+        padding: 8px 15px;
+    }
+    header .hamburger-btn{
+        display: flex;
+        margin-right: 15px;
+    }
+    nav{
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    header.fixed nav{
+        border-top: 1px solid #cccccc;
+    }
+
+    nav ul li{
+        display: block;
+        margin-left: 0;
+    }
+    nav ul li a{
+        color: #555555;
+    }
+    .home-section .home-content h1{
+        font-size: 60px;
+    }
+    .about-us-section .couple{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .about-us-section .couple:nth-child(2){
+        margin-top: 50px;
+    }
+    .about-us-section .couple:nth-child(2)::before{
+        content: none;
+    }
+    .about-us-section .couple i.fa-heart{
+        display: none;
+    }
+    .story-section .story-img{
+        margin-top: 20px;
+    }
+    .story-section .story-content::before{
+        left: 20px;
+    }
+    .story-section .story-item i{
+        margin-left: 0;
+        left: 5px;
+    }
+    .story-section .story-text,
+    .story-section .story-img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .story-section .story-item:nth-child(odd) .story-text{
+        padding: 0 15px 0 50px;
+        text-align: left;
+    }
+    .story-section .story-item:nth-child(even) .story-img{
+        padding: 0 15px 0 50px;
+    }
+    .story-section .story-item:nth-child(odd) .story-text,
+    .story-section .story-item:nth-child(odd) .story-img{
+        padding: 0 15px 0 50px;
+    }
+
+    .playlist-section  iframe{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .rsvp-section .result-container{
+        flex: none;
+        display: block;
+        margin-top: 2em;
+        width: 60%;
+    }
+
+
+}
+
+@media(max-width: 574px){
+    .rsvp-section .form{
+        padding: 60px 25px;
+    }
+ 
+    .home-section .home-content h1{
+        font-size: 40px;
+    }
+    .gallery-section .gallery-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer .footer-content .couple-name{
+        width: 290px;
+        height: 290px;
+    }
+    .footer .footer-content .couple-name h2{
+        font-size: 32px;
+    }   
+    .playlist-section  iframe{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+}

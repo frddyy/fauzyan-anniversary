@@ -1,0 +1,39 @@
+/*  light blue style    */
+.fa-music,
+.preloader .loader i,
+.btn-1:hover,
+.story-section .story-item i,
+.story-section .story-text h3,
+.about-us-section .couple .social-links a i,
+.about-us-section .couple i.fa-heart,
+.about-us-section .couple h3,
+nav ul li a.active,
+body.dark header nav ul li a.active,
+body.dark header nav ul li a:hover,
+nav ul li a:hover{
+    color:#3e99f4;
+}
+.fa-music,
+.btn-1,
+.about-us-section .couple .social-links a i,
+.about-us-section .couple img{
+    border-color: #3e99f4;
+}
+
+p.copyright-text,
+.playlist-section,
+.fa-music::after,
+.setting .s-toggle-btn,
+.btn-1,
+.rsvp-section,
+.about-us-section .couple .social-links a:hover i{
+    background-color: #3e99f4 ;
+}
+
+.preloader .loader::before{
+    border-right: 3px solid  #3e99f4;
+}
+
+.footer .footer-content .couple-name img{
+    filter: hue-rotate(220deg);
+}
