@@ -25,10 +25,10 @@ $(window).on("load", function(){
     slideShow();
 
     //audio
-     var audio = $("#myAudio")[0];
      audio.oncanplay = function(){
          audio.play();
      }
+    
      $(".fa-music").click(function(){
         if($(this).hasClass("pause")){
             audio.play();
