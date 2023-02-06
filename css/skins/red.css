@@ -1,4 +1,5 @@
 /*  red color style    */
+#pagination-container a:hover,
 .fa-music,
 .preloader .loader i,
 .btn-1:hover,
@@ -20,6 +21,7 @@ nav ul li a:hover{
     border-color: #cc3a3b;
 }
 
+#pagination-container a,
 p.copyright-text,
 .playlist-section,
 .fa-music::after,

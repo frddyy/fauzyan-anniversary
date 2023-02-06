@@ -1,3 +1,8 @@
+//audio
+var audio = $("#myAudio")[0];
+audio.autoplay = true;
+audio.load();
+
 $(window).on("load", function(){
 
     // //preloader

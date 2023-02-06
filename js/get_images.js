@@ -7,7 +7,7 @@ get_image_story("may22", 23);
 get_image_story("jun22", 53);
 get_image_story("jul22", 37);
 get_image_story("aug22", 49);
-get_image_story("sep22", 77);
+get_image_story("sep22", 76);
 get_image_story("oct22", 65);
 get_image_story("nov22", 58);
 get_image_story("des22", 50);

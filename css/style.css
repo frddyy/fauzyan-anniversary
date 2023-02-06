@@ -533,7 +533,8 @@ nav ul li a{
 /* story slider */
 .story-img-container{
     /* width: 75%; */
-    height: 100%;
+    /* height: 100%; */
+    max-width: 100%;
     position: relative;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -544,7 +545,9 @@ nav ul li a{
     box-shadow: 10px 25px 30px rgba(56, 56, 61, 0.3);
 }
 .story-img .wrapper{
-    width: 60%;
+    /* width: 60%; */
+    /* max-width: 80%; */
+    max-height: 50%;
     display: flex;
     animation: slide 16s infinite;
 }
@@ -575,7 +578,8 @@ nav ul li a{
     }
 }
 .wrapper img{
-    width: 50%;
+    /* width: 50%; */
+    max-width: 100%;
     /* height: -10%; */
 }
 
@@ -716,6 +720,29 @@ nav ul li a{
 .gallery-popup .gp-controls .next:hover i{
     background-color: rgba(0,0,0,0.8);
 }
+
+/* gallery pagination */
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #pagination-container a {
+    font-size: 14px;
+    padding: 10px 20px;
+    /* background-color: lightgray; */
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+
+  #pagination-container a:hover {
+    background-color: #bbbbbb;
+  }
+
 /* playlist section */
 .playlist-section{
     padding: 80px 0 80px;
@@ -921,7 +948,7 @@ body.dark header.fixed .logo a{
     color: #ffffff;
 }
 
-
+body.dark .about-us-section p,
 body.dark .story-section span.date,
 body.dark .story-section .story-text p, 
 body.dark .couple-section .couple p{
