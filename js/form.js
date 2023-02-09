@@ -29,7 +29,7 @@ form.addEventListener('submit', function(e) {
     <br><p><strong> Kesan: </strong><br>${kesan}</p> 
     <br><p><strong> Pesan: </strong><br>${pesan}</p>
     <br><p><strong> Harapan: </strong><br>${harapan}</p>`;
-    resultContainer.innerHTML = content;
+    // resultContainer.innerHTML = content;
     // resultContainer.style.display = "block";
 
     sessionStorage.setItem("formData", content);
