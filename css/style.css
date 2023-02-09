@@ -810,6 +810,8 @@ nav ul li a{
     color: #ffffff;
 }
 
+.rsvp-section .rsvp-form p
+
 .rsvp-section .section-title p{
     margin: 10px 0 0;
     font-size: 16px;
@@ -940,7 +942,8 @@ footer .footer-content h2{
 
 footer .footer-content p{
     font-size: 16px;
-    line-height: 60px;
+    /* line-height: 60px; */
+    padding: 20px;
     color: #555555;
     margin: 0;
     font-weight: normal;
@@ -982,7 +985,7 @@ body.dark header.fixed nav ul li a,
 body.dark header.fixed .logo a{
     color: #ffffff;
 }
-
+body.dark .rsvp-section .rsvp-form p,
 body.dark .about-us-section p,
 body.dark .story-section span.date,
 body.dark .story-section .story-text p, 

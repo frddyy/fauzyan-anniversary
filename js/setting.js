@@ -1,7 +1,7 @@
 const color = [
     {
         name:'pink',
-        code:' #eb8999',
+        code:'#e46176',
         url:'css/skins/pink.css'
 
     },
