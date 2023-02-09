@@ -2,11 +2,11 @@ const form = document.querySelector('.form');
 const submitBtn = document.querySelector('#submit-btn');
 const resultContainer = document.querySelector('.result-container');
 
-// Check local storage for form data
-if (sessionStorage.getItem('formData')) {
-    // Remove the display property from .result-container
-    document.querySelector('.result-container').style.display = 'block';
-  }
+// // Check local storage for form data
+// if (sessionStorage.getItem('formData')) {
+//     // Remove the display property from .result-container
+//     document.querySelector('.result-container').style.display = 'block';
+//   }
 
 // Menampilkan isi form di dalam box container
 form.addEventListener('submit', function(e) {

@@ -68,8 +68,8 @@ $(document).ready(function(){
         $(".gallery-popup .gp-img").css("max-height", wHeight + "px" );
 
         let gpIndex = 0;
-        // const totalGalleryItems = $(".gallery-item").length;
-        const totalGalleryItems = 560;
+        const totalGalleryItems = $(".gallery-item").length;
+        // const totalGalleryItems = 560;
 
         $(".gallery-item").click(function(){
             itemIndex = $(this).index()

@@ -863,8 +863,9 @@ nav ul li a{
     outline: none;
 }
 
-.rsvp-section .result-container h2{
+/* .rsvp-section .result-container h2{
     text-align: center;
+    
 }
 
 .rsvp-section .result-container{
@@ -875,7 +876,7 @@ nav ul li a{
     margin: 0px auto;
     box-shadow: 0 0 10px #888888;
     display: none;
-} 
+}  */
 
 /* .rsvp-section .result-container:not(empty){
     display: block;
