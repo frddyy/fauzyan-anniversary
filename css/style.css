@@ -810,8 +810,6 @@ nav ul li a{
     color: #ffffff;
 }
 
-.rsvp-section .rsvp-form p
-
 .rsvp-section .section-title p{
     margin: 10px 0 0;
     font-size: 16px;
@@ -819,14 +817,14 @@ nav ul li a{
 }
 
 .rsvp-section .rsvp-form{
-    flex: 0 0 50%;
-    margin: 0px auto;
+    flex: 0 0 100%;
+    /* margin: 0px auto; */
     max-width: 100%;
     padding: 0 15px;
 }
 
 .rsvp-section .form{
-    max-width: 100%;
+    max-width: 600px;
     background-color: #ffffff;
     margin: auto;
     padding: 60px 25px;
@@ -836,6 +834,7 @@ nav ul li a{
 .rsvp-section .form .input-group{
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0 15px;
 }
 
 .rsvp-section .form .input-group.w50{
@@ -876,11 +875,11 @@ nav ul li a{
     margin: 0px auto;
     box-shadow: 0 0 10px #888888;
     display: none;
-}
+} 
 
 /* .rsvp-section .result-container:not(empty){
     display: block;
-} */
+}
 
 /* footer */
 
@@ -978,7 +977,7 @@ body.dark header.fixed{
 body.dark p.copyright-text,
 body.dark footer .footer-content p,
 body.dark footer .footer-content h2,
-body.dark .rsvp-section .form .input-control,
+/* body.dark .rsvp-section .form .input-control, */
 body.dark .section-title h2,
 body.dark header nav ul li a,
 body.dark header.fixed nav ul li a,
@@ -1011,6 +1010,8 @@ body.dark .couple-section .couple:nth-child(2)::before{
 
 body.dark p.copyright-text,
 body.dark .rsvp-section .form .input-control,
+body.dark .rsvp-section .form .input-control #nama,
+body.dark .rsvp-section .form .input-control #email,
 body.dark header.fixed nav{
     border-color: #333333;
 }

@@ -13,25 +13,6 @@ get_image_story("nov22", 58);
 get_image_story("des22", 50);
 get_image_story("jan23", 44);
 
-// function get_image_gallery(qty) {
-//   let container = document.getElementById("img-container");
-//   for (let i = 1; i <= qty; i++) {
-//     let div1 = document.createElement("div");
-//     div1.className = "gallery-item";
-//     let div2 = document.createElement("div");
-//     div2.className = "gallery-item-inner";
-//     let image = document.createElement("img");
-//     image.src = `img/gallery/thumb/${i}.jpg`; 
-//     image.dataset.large = `img/gallery/large/${i}.jpg`;
-//     image.alt = "pic gallery";
-//     image.classList.add("lazy");
-
-//     container.appendChild(div1);
-//     div1.appendChild(div2);
-//     div2.appendChild(image);
-//   }
-// }
-
 function get_image_gallery(qty) {
     let container = document.getElementById("img-container");
     let startIndex = 1;
@@ -102,13 +83,13 @@ function get_image_story(month, qty){
     image.src = `img/story/${month}/${i}.jpg`;
     image.setAttribute("data-src", image.src);
     image.src = "";
-    image.className = "lazy";
+    image.className = "lazy-story";
     div2.appendChild(image);
   }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy-story"));
   let active = false;
 
   const lazyLoad = function() {
@@ -142,3 +123,4 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", lazyLoad);
   window.addEventListener("orientationchange", lazyLoad);
 });
+

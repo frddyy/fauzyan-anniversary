@@ -3,7 +3,7 @@ const submitBtn = document.querySelector('#submit-btn');
 const resultContainer = document.querySelector('.result-container');
 
 // Check local storage for form data
-if (localStorage.getItem('formData')) {
+if (sessionStorage.getItem('formData')) {
     // Remove the display property from .result-container
     document.querySelector('.result-container').style.display = 'block';
   }
@@ -32,7 +32,7 @@ form.addEventListener('submit', function(e) {
     resultContainer.innerHTML = content;
     // resultContainer.style.display = "block";
 
-    localStorage.setItem("formData", content);
+    sessionStorage.setItem("formData", content);
 
     console.log("berhasil");
 });
@@ -50,33 +50,33 @@ submitBtn.addEventListener('click', function() {
 
 // Menyimpan isi form setelah dikirim
 const saveForm = function() {
-    localStorage.setItem('nama', document.querySelector('#nama').value);
-    localStorage.setItem('email', document.querySelector('#email').value);
-    localStorage.setItem('perasaan', document.querySelector('#perasaan').value);
-    localStorage.setItem('jelasin', document.querySelector('#jelasin').value);
-    localStorage.setItem('kesan', document.querySelector('#kesan').value);
-    localStorage.setItem('pesan', document.querySelector('#pesan').value);
-    localStorage.setItem('harapan', document.querySelector('#harapan').value);
+    sessionStorage.setItem('nama', document.querySelector('#nama').value);
+    sessionStorage.setItem('email', document.querySelector('#email').value);
+    sessionStorage.setItem('perasaan', document.querySelector('#perasaan').value);
+    sessionStorage.setItem('jelasin', document.querySelector('#jelasin').value);
+    sessionStorage.setItem('kesan', document.querySelector('#kesan').value);
+    sessionStorage.setItem('pesan', document.querySelector('#pesan').value);
+    sessionStorage.setItem('harapan', document.querySelector('#harapan').value);
 };
 form.addEventListener('submit', saveForm);
 
 // Memuat isi form setelah dikirim
 const loadForm = function() {
-    document.querySelector('#nama').value = localStorage.getItem('nama');
-    document.querySelector('#email').value = localStorage.getItem('email');
-    document.querySelector('#perasaan').value = localStorage.getItem('perasaan');
-    document.querySelector('#jelasin').value = localStorage.getItem('jelasin');
-    document.querySelector('#kesan').value = localStorage.getItem('kesan');
-    document.querySelector('#pesan').value = localStorage.getItem('pesan');
-    document.querySelector('#harapan').value = localStorage.getItem('harapan');
+    document.querySelector('#nama').value = sessionStorage.getItem('nama');
+    document.querySelector('#email').value = sessionStorage.getItem('email');
+    document.querySelector('#perasaan').value = sessionStorage.getItem('perasaan');
+    document.querySelector('#jelasin').value = sessionStorage.getItem('jelasin');
+    document.querySelector('#kesan').value = sessionStorage.getItem('kesan');
+    document.querySelector('#pesan').value = sessionStorage.getItem('pesan');
+    document.querySelector('#harapan').value = sessionStorage.getItem('harapan');
 };
 window.addEventListener('load', loadForm);
 
 // menampilkan data dari local storage saat page refresh
 window.addEventListener("load", function() {
-    let formData = localStorage.getItem("formData");
+    let formData = sessionStorage.getItem("formData");
     if (formData) {
-        resultContainer.innerHTML = formData;
+        // resultContainer.innerHTML = formData;
         sendEmail(formData);
     }
 });
@@ -91,7 +91,6 @@ function sendEmail(contents) {
         Body : contents
         }).then(
             alert("Makasih banyak udah ngisi formnyaa <3")
-            //console.log("email has been sent")
-            
+            //console.log("email has been sent")   
         );
 }

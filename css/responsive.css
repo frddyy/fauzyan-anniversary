@@ -15,9 +15,9 @@
         display: block;
     }
 
-    .rsvp-section .rsvp-form{
+    /* .rsvp-section .rsvp-form{
         flex: 0 0 45%;
-    }
+    } */
 }
 
 @media(max-width: 767px){
@@ -96,12 +96,12 @@
         width: 90%;
     }
 
-    .rsvp-section .result-container{
+    /* .rsvp-section .result-container{
         flex: none;
         display: block;
         margin-top: 2em;
         width: 60%;
-    }
+    } */
 
 
 }
@@ -114,6 +114,8 @@
     .home-section .home-content h1{
         font-size: 40px;
     }
+
+    .rsvp-section .form .input-group.w50,
     .gallery-section .gallery-item{
         flex: 0 0 100%;
         max-width: 100%;
