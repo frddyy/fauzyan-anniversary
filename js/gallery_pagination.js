@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var itemsPerPage = 40;
+  var itemsPerPage = 20;
   var items = $('.gallery-item');
   var numPages = Math.ceil(items.length / itemsPerPage);
   var currentPage = 1;
@@ -39,12 +39,12 @@ $(document).ready(function() {
     }
   });
 
-  $(document).on('keydown', function(e) {
-    if (e.which === 37) {
-      $('#previous').click();
-    }
-    if (e.which === 39) {
-      $('#next').click();
-    }
-  });  
+  // $(document).on('keydown', function(e) {
+  //   if (e.which === 37) {
+  //     $('#previous').click();
+  //   }
+  //   if (e.which === 39) {
+  //     $('#next').click();
+  //   }
+  // });  
 });

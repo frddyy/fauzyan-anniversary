@@ -12,13 +12,15 @@ nav ul li a.active,
 body.dark header nav ul li a.active,
 body.dark header nav ul li a:hover,
 nav ul li a:hover{
-    color:#3e99f4;
+    /* color:#3e99f4; */
+    color:  #69a8be;
 }
 .fa-music,
 .btn-1,
 .about-us-section .couple .social-links a i,
 .about-us-section .couple img{
-    border-color: #3e99f4;
+    /* border-color: #3e99f4; */
+    border-color:  #69a8be;
 }
 
 #pagination-container a,
@@ -29,11 +31,13 @@ p.copyright-text,
 .btn-1,
 .rsvp-section,
 .about-us-section .couple .social-links a:hover i{
-    background-color: #3e99f4 ;
+    /* background-color: #3e99f4 ; */
+    background-color: #69a8be;
 }
 
 .preloader .loader::before{
-    border-right: 3px solid  #3e99f4;
+    /* border-right: 3px solid  #3e99f4; */
+    border-right: 3px solid   #69a8be;
 }
 
 .footer .footer-content .couple-name img{

@@ -12,13 +12,13 @@ nav ul li a.active,
 body.dark header nav ul li a.active,
 body.dark header nav ul li a:hover,
 nav ul li a:hover{
-    color:#cc3a3b;
+    color:#eb5656;
 }
 .fa-music,
 .btn-1,
 .about-us-section .couple .social-links a i,
 .about-us-section .couple img{
-    border-color: #cc3a3b;
+    border-color: #eb5656;
 }
 
 #pagination-container a,
@@ -29,13 +29,13 @@ p.copyright-text,
 .btn-1,
 .rsvp-section,
 .about-us-section .couple .social-links a:hover i{
-    background-color: #cc3a3b ;
+    background-color: #eb5656 ;
 }
 
 .preloader .loader::before{
-    border-right: 3px solid #cc3a3b;
+    border-right: 3px solid #eb5656;
 }
 
 .footer .footer-content .couple-name img{
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(20deg);
 }

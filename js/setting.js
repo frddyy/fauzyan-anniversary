@@ -1,13 +1,13 @@
 const color = [
     {
         name:'pink',
-        code:'#fb839e',
+        code:' #eb8999',
         url:'css/skins/pink.css'
 
     },
     {
         name:'light blue',
-        code:'#3e99f4',
+        code:' #69a8be',
         url:'css/skins/light-blue.css'
     },
     {
@@ -17,13 +17,13 @@ const color = [
     },
     {
         name:'red',
-        code:'#cc3a3b',
+        code:'#eb5656',
         url:'css/skins/red.css'
     },
     {
-        name:'yellow',
-        code:'#ff9801',
-        url:'css/skins/yellow.css'
+        name:'light brown',
+        code:'#c78a67',
+        url:'css/skins/light-brown.css'
     }
 ]
 
@@ -43,10 +43,13 @@ $(document).ready(function () {
     })
 
     $(".theme-mode").change(function(){
+        var footerImage = document.querySelector('.footer img');
         if($(this).val() == 'light'){
             $("body").removeClass("dark");
+            footerImage.src = 'img/flower-case.png';
         }else{
             $("body").addClass("dark");
+            footerImage.src = 'img/flower-case-white.png';
         }
     })
 

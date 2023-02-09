@@ -98,6 +98,24 @@ $(document).ready(function(){
         })
     })
 
+    function gpSlideShow() {
+        const imgSrc = $(".gallery-item").eq(itemIndex).find("img").attr("data-large");
+        $(".gallery-popup .gp-img").fadeIn().attr("src", imgSrc);
+        $(".gp-counter").text((itemIndex+1) + "/" + totalGalleryItems);
+    }
+
+    //hide gallery popup
+    $(".gp-close").click(function(){
+        $(".gallery-popup").removeClass("open");
+    })
+
+    //hide gallery popup when clicked outside of gp-container
+    $(".gallery-popup").click(function(event){
+        if($(event.target).hasClass("open")){
+            $(".gallery-popup").removeClass("open");
+        }
+    })
+
     //arrow key control
     document.addEventListener('keydown', (e) => {
         e = e || window.event;
@@ -125,24 +143,6 @@ $(document).ready(function(){
             $(".gallery-popup .gp-img").fadeOut(function(){
                 gpSlideShow();
             })
-        }
-    })
-
-    function gpSlideShow() {
-        const imgSrc = $(".gallery-item").eq(itemIndex).find("img").attr("data-large");
-        $(".gallery-popup .gp-img").fadeIn().attr("src", imgSrc);
-        $(".gp-counter").text((itemIndex+1) + "/" + totalGalleryItems);
-    }
-
-    //hide gallery popup
-    $(".gp-close").click(function(){
-        $(".gallery-popup").removeClass("open");
-    })
-
-    //hide gallery popup when clicked outside of gp-container
-    $(".gallery-popup").click(function(event){
-        if($(event.target).hasClass("open")){
-            $(".gallery-popup").removeClass("open");
         }
     })
 })
