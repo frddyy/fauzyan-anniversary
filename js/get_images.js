@@ -11,7 +11,8 @@ get_image_story("sep22", 76);
 get_image_story("oct22", 65);
 get_image_story("nov22", 58);
 get_image_story("des22", 50);
-get_image_story("jan23", 44);
+get_image_story("jan23", 47);
+
 
 function get_image_gallery(qty) {
   let container = document.getElementById("img-container");
@@ -53,7 +54,7 @@ function get_image_gallery(qty) {
     }
 
     image.addEventListener("load", function() {
-      image.style.transition = "opacity 1s ease-in-out";
+      image.style.transition = "opacity 2s ease-in-out";
       image.style.opacity = 1;
     });
   }
